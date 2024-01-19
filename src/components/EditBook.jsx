@@ -17,7 +17,7 @@ const EditBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:8081/api/v1/book/edit/" + id)
+      .get("https://englishquest-backend.vercel.app/api/v1/book/edit/" + id)
       .then((res) => {
         console.log(res);
         setName(res.data.book.name);
@@ -36,7 +36,7 @@ const EditBook = () => {
     e.preventDefault();
     console.log("clicked update book btn");
     axios
-      .put("http://localhost:8081/api/v1/book/update/" + id, {
+      .put("https://englishquest-backend.vercel.app/api/v1/book/update/" + id, {
         name,
         author,
         imageUrl,

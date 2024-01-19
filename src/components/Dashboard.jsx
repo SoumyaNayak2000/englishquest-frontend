@@ -12,7 +12,7 @@ const Dashboard = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:8081/api/v1/creator/dashboard")
+      .get("https://englishquest-backend.vercel.app/api/v1/creator/dashboard")
       .then((res) => {
         console.log(res);
 

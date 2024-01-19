@@ -22,14 +22,16 @@ const App = () => {
   const [role, setRole] = useState("");
   axios.defaults.withCredentials = true;
   useEffect(() => {
-    axios.get("http://localhost:8081/api/v1/auth/verify").then((res) => {
-      console.log(res);
-      if (res.data.login) {
-        setRole(res.data.role);
-      } else {
-        setRole("");
-      }
-    });
+    axios
+      .get("https://englishquest-backend.vercel.app/api/v1/auth/verify")
+      .then((res) => {
+        console.log(res);
+        if (res.data.login) {
+          setRole(res.data.role);
+        } else {
+          setRole("");
+        }
+      });
   }, []);
   return (
     <BrowserRouter>

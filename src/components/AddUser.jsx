@@ -19,7 +19,7 @@ const Login = () => {
     setLoading(true);
     console.log("clicked register btn");
     axios
-      .post("http://localhost:8081/api/v1/adduser/register", {
+      .post("https://englishquest-backend.vercel.app/api/v1/adduser/register", {
         username,
         email,
         password,

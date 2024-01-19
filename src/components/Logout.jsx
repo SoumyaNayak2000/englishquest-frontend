@@ -7,7 +7,7 @@ const Logout = ({ setRole }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8081/api/v1/auth/logout")
+      .get("https://englishquest-backend.vercel.app/api/v1/auth/logout")
       .then((res) => {
         if (res.data.logout) {
           setRole("");
