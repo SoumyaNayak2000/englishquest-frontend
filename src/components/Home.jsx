@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
 import "../styles/home.scss";
 
-const Home = ({}) => {
+const Home = () => {
   return (
     <div className="hero">
       <div className="hero-content">

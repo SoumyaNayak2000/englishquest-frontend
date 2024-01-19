@@ -7,7 +7,7 @@ const Logout = ({ setRole }) => {
 
   useEffect(() => {
     axios
-      .get("https://library-d18e.onrender.com/api/v1/auth/logout")
+      .get("http://localhost:8081/api/v1/auth/logout")
       .then((res) => {
         if (res.data.logout) {
           setRole("");

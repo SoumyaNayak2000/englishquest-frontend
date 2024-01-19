@@ -8,7 +8,7 @@ const DeleteBook = () => {
 
   useEffect(() => {
     axios
-      .delete("https://library-d18e.onrender.com/api/v1/book/delete/" + id)
+      .delete("http://localhost:8081/api/v1/book/delete/" + id)
       .then((res) => {
         if (res.data.deleted) {
           navigate("/books");
