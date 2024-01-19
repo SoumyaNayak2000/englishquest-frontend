@@ -1,0 +1,46 @@
+.hero{
+    display: flex;
+    background-color: #301934;
+    color: #ffc107;
+    height: 92vh;
+    padding-inline: 30px;
+    .hero-content{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        h1{
+            font-size: 3rem;
+            margin-bottom: 10px;
+            word-spacing: 1%;
+        }
+        p{
+            font-size: 1.2rem;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+    }
+    .hero-image{
+        flex: 1;
+        background: url('/Images/library.png') center;
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero{
+        flex-direction: column;
+        height: 100vh;
+        .hero-content{
+            padding: 0px;
+        }
+        .hero-image{
+            background-size: 100%;
+        }
+    
+    }
+}
