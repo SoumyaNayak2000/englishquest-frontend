@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     console.log("clicked register btn");
     axios
-      .post("http://localhost:8081/api/v1/adduser/register", {
+      .post("https://library-d18e.onrender.com/api/v1/adduser/register", {
         username,
         email,
         password,

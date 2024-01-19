@@ -9,7 +9,7 @@ const Dashboard = () => {
   axios.defaults.withCredentials = true;
   useEffect(() => {
     axios
-      .get("http://localhost:8081/api/v1/creator/dashboard")
+      .get("https://library-d18e.onrender.com/api/v1/creator/dashboard")
       .then((res) => {
         console.log(res);
         setCreators(res.data.creatorCount);

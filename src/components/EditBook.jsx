@@ -14,7 +14,7 @@ const EditBook = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8081/api/v1/book/edit/" + id)
+      .get("https://library-d18e.onrender.com/api/v1/book/edit/" + id)
       .then((res) => {
         console.log(res);
         setName(res.data.book.name);
@@ -32,7 +32,7 @@ const EditBook = () => {
     e.preventDefault();
     console.log("clicked update book btn");
     axios
-      .put("http://localhost:8081/api/v1/book/update/" + id, {
+      .put("https://library-d18e.onrender.com/api/v1/book/update/" + id, {
         name,
         author,
         imageUrl,

@@ -16,7 +16,7 @@ const Addbooks = () => {
     e.preventDefault();
     console.log("clicked add book btn");
     axios
-      .post("http://localhost:8081/api/v1/book/add", {
+      .post("https://library-d18e.onrender.com/api/v1/book/add", {
         name,
         author,
         imageUrl,
